@@ -1,0 +1,21 @@
+/* general settings */
+html, body {
+	font-family: Helvetica, sans-serif;
+}
+
+#description p {
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+pre .html-tag {
+	color: #63a35c;
+}
+
+pre .html-attr {
+	color: #795da3;
+}
+
+pre .html-attr-value {
+	color: #183691;
+}

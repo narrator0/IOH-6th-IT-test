@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Problem 1</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="../general.css">
+	<link rel="stylesheet" href="answer.css">
+</head>
+<body>
+	
+	<div id="description" class="container">
+		<p>以下已經提供了一份html架構和一些必要的css元素，其中 header 和 footer 占了版面的100%，sidebar1 和 sidebar2 各佔版面的25%，請寫出相對應的css code。</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Component</th>
+					<th>Color</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Header</td>
+					<td>#26a69a</td>
+				</tr>
+				<tr>
+					<td>Sidebar1</td>
+					<td>#999999</td>
+				</tr>
+				<tr>
+					<td>Sidebar2</td>
+					<td>#F1CD75</td>
+				</tr>
+				<tr>
+					<td>Content</td>
+					<td>#80cbc4</td>
+				</tr>
+				<tr>
+					<td>Footer</td>
+					<td>rgba(166, 38, 65, 0.9)</td>
+				</tr>
+			</tbody>
+		</table>
+		<blockquote>請在 <code>answer.css</code> 內作答。</blockquote>
+		<p>請使用 css 將 <code>#answer</code> 內的 html 元素編輯成下圖的樣子：</p>	
+		<img src="https://camo.githubusercontent.com/4b157119fbb21e26b46597f863f56d3a5aed22de/687474703a2f2f692e696d6775722e636f6d2f643677616d6a582e706e67" alt="example" width="100%">
+
+		<hr>
+
+		<div id="answer">
+			<div id="header" class="rect">
+				<div class="text">
+					Header
+			  </div>
+			</div>
+			<div id="sidebar1" class="rect">
+				<div class="text">
+					Siderbar-1
+				</div>
+			</div>
+			<div id="sidebar2" class="rect">
+				<div class="text">
+					Siderbar-2
+				</div>
+			</div>
+			<div id="content" class="rect">
+			  <div class="text">
+					Content
+				</div>
+			</div>
+			<div id="footer" class="rect">
+				<div class="text">
+					Footer
+				</div>
+			</div>
+		</div>
+	</div> <!-- container end -->
+	
+</body>
+</html>
