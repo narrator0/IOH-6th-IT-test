@@ -1,3 +1,11 @@
+.table tbody tr:hover {
+	color: white;
+}
+
+#answer {
+	margin-bottom: 20px;
+}
+
 .text {
 	text-align: center;
 	line-height: 200px;
