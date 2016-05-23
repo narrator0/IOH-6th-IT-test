@@ -5,10 +5,25 @@
 	<title>Problem 1</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
-	<link rel="stylesheet" href="../general.css">
+	<link rel="stylesheet" href="../../lib/general.css">
 	<link rel="stylesheet" href="answer.css">
+
+	<style id="answer-css"></style>
 </head>
 <body>
+
+	<div class="header">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluild">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="">Problem 1</a></li>
+					<li><a href="../selector/selector.html">Problem 2</a></li>
+					<li><a href="../simple-test/simple-test.html">Problem 3</a></li>
+					<li><a href="../../javascript/test.html">Javascript</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	
 	<div class="content container">
 		<div class="description">
@@ -18,29 +33,29 @@
 			<table class="table">
 				<thead>
 					<tr>
-						<th>Component</th>
+						<th>Component ID</th>
 						<th>Color</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Header</td>
+						<td>header</td>
 						<td class="color-td">#26a69a</td>
 					</tr>
 					<tr>
-						<td>Sidebar1</td>
+						<td>sidebar1</td>
 						<td class="color-td">#999999</td>
 					</tr>
 					<tr>
-						<td>Sidebar2</td>
+						<td>sidebar2</td>
 						<td class="color-td">#F1CD75</td>
 					</tr>
 					<tr>
-						<td>Content</td>
+						<td>content</td>
 						<td class="color-td">#80cbc4</td>
 					</tr>
 					<tr>
-						<td>Footer</td>
+						<td>footer</td>
 						<td class="color-td">rgba(166, 38, 65, 0.9)</td>
 					</tr>
 				</tbody>
@@ -51,7 +66,17 @@
 		</div>
 		
 		<hr>
-
+		
+		<!-- code editor -->
+		<div class="window">
+			<input type="checkbox" class="toggle" id="test">
+			<label for="test" class="btn btn-success">Test your code here</label>
+			<div class="editor"></div>
+		</div>
+		
+		<hr>
+		
+		<!-- #answer div start -->
 		<div id="answer">
 			<div id="header" class="rect">
 				<div class="text">
@@ -78,29 +103,21 @@
 					Footer
 				</div>
 			</div>
-		</div>
+		</div> <!-- answer div end -->
 	</div> <!-- container end -->
+	
 
 	<!-- script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  
-		  //change background color
-			$('.table tr').each(function(){
-				var self = $(this);
-				var color = self.find('.color-td').text();
+	
+	<!-- CodeMirror -->
+	<script src="../../lib/CodeMirror/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="../../lib/CodeMirror/lib/codemirror.css">
+	<link rel="stylesheet" href="../../lib/CodeMirror/theme/base16-dark.css">
+	<script src="../../lib/CodeMirror/mode/css/css.js"></script>
+	
+	<!-- page specific -->
+	<script src="../../lib/code-html.js"></script>
 
-				self.mouseover(function(){
-					self.css('background-color', color);
-				});
-
-				self.mouseout(function(){
-					self.css('background-color', "white");
-				});
-			});
-
-		});
-	</script>
 </body>
 </html>

@@ -3,102 +3,172 @@
 	<head>
 		<meta charset="utf-8">
 		<title>前端Javascript題目+測試</title>
+
+		<!-- css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="../lib/general.css">
 	</head>
 	<body>
 		<script type="text/javascript" src="answer/add-digits.js"></script>
 		<script type="text/javascript" src="answer/for-json.js"></script>
 		<script type="text/javascript" src="answer/for-array.js"></script>
 		<script type="text/javascript" src="answer/reverse-a-string.js"></script>
+		<script type="text/javascript" src="answer/simple-form.js"></script>
 		<script type="text/javascript" src="answer/up-down-left-right.js"></script>
-		<h1>前端Javascript題目</h1>
-		<hr>
-		<h3>第一題作答位置：<b>add-digit.js</b></h3>
-		<h4>給一個正整數，請重複加每個位數直到結果剩一個位數時，回傳該數字</h4>
-		<h4>例如：給 num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2, 因為 2 只有一個位數, 則回傳 2</h4>
+
+		<div class="header">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluild">
+					<ul class="nav navbar-nav">
+						<li><a href="../css/code-html/code-html.html">Problem 1</a></li>
+						<li><a href="../css/selector/selector.html">Problem 2</a></li>
+						<li><a href="../css/simple-test/simple-test.html">Problem 3</a></li>
+						<li class="active"><a href="">Javascript</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="content container">
+
+			<h1>前端Javascript題目</h1>
+			
+			<hr>
+			
+			<!-- Problem 1 -->
+			<h3>Problem 1</h3>
+			<blockquote>請將答案寫在 <code>answer/add-digit.js</code> 內</blockquote>
+			<h4>給一個正整數，請將每個位數相加，直到結果剩一個位數時，回傳該數字。</h4>
+			<h4>例如給 num = 38, the process is like:</h4>
+			<pre>   38
+-> 3 + 8 = 11 
+-> 1 + 1 = 2
+   因為 2 只有一個位數, 所以回傳 2
+			</pre>
 
 
-		<br>
-		<h4>回答測試區</h4>
-		<p>add_digits(38) : <span id="first-answer-1"></span><span id="first-answer-1-judge"></span></p>
-		<p>add_digits(1024) : <span id="first-answer-2"></span><span id="first-answer-2-judge"></span></p>
-		<p>add_digits(56789) : <span id="first-answer-3"></span><span id="first-answer-3-judge"></span></p>
+			<br>
+			<h4>回答測試區</h4>
+			<p>add_digits(38) : <span id="first-answer-1"></span><span id="first-answer-1-judge"></span></p>
+			<p>add_digits(1024) : <span id="first-answer-2"></span><span id="first-answer-2-judge"></span></p>
+			<p>add_digits(56789) : <span id="first-answer-3"></span><span id="first-answer-3-judge"></span></p>
 
-		<hr>
-		<h3>第二題作答位置：<b>for-json.js</b></h3>
-		<h4>請讀出json格式的value，分別有以下三個key</h4>
-		<ul>
-			<li>team</li>
-			<li>name</li>
-			<li>phone</li>
-		</ul>
-		<h4>以下為題目的json</h4>
-		<h4>
-			{
-		        "team" : "Lakers", 
-		        "name" : "Kobe",
-		        "number" : "24"
-		    },
-		    {
-		        "team" : "Thunders", 
-		        "name" : "Durant",
-		        "number" : "35"
-		    },
-		    {
-		        "team" : "Cavaliers", 
-		        "name" : "James",
-		        "number" : "23"
-		    },
-		    {
-		        "team" : "Warriors", 
-		        "name" : "Curry",
-		        "number" : "30"
-		    },
-		    {
-		        "team" : "Rockets", 
-		        "name" : "Harden",
-		        "number" : "13"
-		    }
-		</h4>
-		<h4>請將code寫在 json_run(json) 這個function內，並將結果放在 < ul id="second-answer" > 內</h4>	
-		
-		<br>
-		<h4>回答測試區</h4>
-		<ul id="second-answer"></ul>
+			<hr>
 
-		<hr>
-		<h3>第三題作答位置：for-array.js</h3>
-		<h4>請讀出array的值，並將結果放在 id="third-answer">的< ul >內，</h4>
-		<h4>範例array： ['Paul', 'Jordan', 'Howard', 'Duncan', 'Parker']</h4>
-		<h4>請將code寫在 array_run(array) 內</h4>
-		
-		<br>
-		<h4>回答測試區</h4>
-		<ul id="third-answer"></ul>
+			<!-- Problem 2 -->
+			<h3>Problem 2</h3>
+			<blockquote>請將答案寫在 <code>answer/for-json.js</code> 內</blockquote>
+			<h4>請讀出 json 格式的 value，分別有以下三個 key</h4>
+			<ul>
+				<li>team</li>
+				<li>name</li>
+				<li>phone</li>
+			</ul>
+			<h4>以下為題目的 json</h4>
+			<pre>{
+  "team" : "Lakers", 
+  "name" : "Kobe",
+  "number" : "24"
+},
+{
+  "team" : "Thunders", 
+  "name" : "Durant",
+  "number" : "35"
+},
+{
+  "team" : "Cavaliers", 
+  "name" : "James",
+  "number" : "23"
+},
+{
+  "team" : "Warriors", 
+  "name" : "Curry",
+  "number" : "30"
+},
+{
+  "team" : "Rockets", 
+  "name" : "Harden",
+  "number" : "13"
+}
+			</pre>
+			<h4>請將 code 寫在 json_run(json) 這個 function 內，並將結果放在 <code>&lt;ul id="second-answer"&gt;</code> 內</h4>	
+			
+			<br>
+			<h4>回答測試區</h4>
+			<ul id="second-answer"></ul>
 
-		<hr>
-		<h3>第四題作答位置：reverse-a-string.js</h3>
-		<h4>設計一個function反轉傳入的字串，</h4>
-		<h4>請將code寫在 reverse_string(s) 這個function內</h4>
+			<hr>
 
-		<br>
-		<h4>回答測試區</h4>
-		<p>reverse_string("IOH") : <span id="forth-answer-1"></span><span id="forth-answer-1-judge"></span></p>
-		<p>reverse_string("Victor") : <span id="forth-answer-2"></span><span id="forth-answer-2-judge"></span></p>
-		<p>reverse_string("refrigerator") : <span id="forth-answer-3"></span><span id="forth-answer-3-judge"></span></p>
+			<!-- Problem 3 -->
+			<h3>Problem 3</h3>
+			<blockquote>請將答案寫在 <code>answer/for-array.js</code> 內</blockquote>
+			<h4>請讀出 array 的值，並將結果放在 <code>&lt;id="third-answer"&gt;</code> 的 <code>&lt;ul&gt;</code> 內，</h4>
+			<h4>範例 array：</h4>
+			<pre>
+[
+  "Paul", 
+  "Jordan", 
+  "Howard", 
+  "Duncan", 
+  "Parker"
+]
+			</pre>
+			
+			<br>
+			<h4>回答測試區</h4>
+			<ul id="third-answer"></ul>
 
-		<hr>
-		<h3>第五題：simple-form.js</h3>
-		<h4>使用 js 在按下 submit 之後，將帳號跟密碼的資訊印在 id="our-answer" 的 div 內。</h4>
-		<h4>請將code寫在 simple-form.html 這個html檔內</h4>
+			<hr>
 
-		<br>
-		<h4>回答測試區</h4>
-		<iframe src="answer/simple-form.html"></iframe>
+			<!-- Problem 4 -->
+			<h3>Problem 4</h3>
+			<blockquote>請將答案寫在 <code>answer/reverse-a-string.js</code> 內</blockquote>
+			<h4>設計一個 function 反轉傳入的字串。</h4>
+			<h4>例如：傳入 <code>"hello world"</code> 回傳 <code>"dlrow olleh"</code>。</h4>	
 
-		<hr>
-		<h3>第六題：up-down-left-right.js</h3>
-		<h4>設計一個javascript程式來偵測“上下左右”按鍵事件，並在按下按鍵後alert出按的按鍵是什麼</h4>
-		<h4>請將code寫在 up-down-left-right.js 這個js檔案內</h4>
+			<br>
+			<h4>回答測試區</h4>
+			<p>reverse_string("IOH") : <span id="forth-answer-1"></span><span id="forth-answer-1-judge"></span></p>
+			<p>reverse_string("Victor") : <span id="forth-answer-2"></span><span id="forth-answer-2-judge"></span></p>
+			<p>reverse_string("refrigerator") : <span id="forth-answer-3"></span><span id="forth-answer-3-judge"></span></p>
+
+			<hr>
+
+			<!-- Problem 5 -->
+			<h3>Problem 5</h3>
+			<blockquote>請將答案寫在 <code>/answer/simple-form.js</code> 內</blockquote>
+			<h4>使用 js 在按下 submit 之後，將帳號跟密碼的資訊印在 <code>id="our-answer"</code> 的 <code>div</code> 內。</h4>
+
+			<br>
+			<h4>回答測試區</h4>
+			<div class="form-container">
+				<!-- account -->
+		    <div class="form-group">
+					<label for="account">帳號：</label>
+					<input type="text" class="form-control">
+		    </div>
+				
+				<!-- password -->
+				<div class="form-group">
+					<label for="pw">密碼：</label>
+					<input type="password" class="form-control">
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" value="submit" class="btn btn-success">
+				</div>
+				
+				<!-- answer div -->
+				<div id="four-answer"></div>
+			</div>
+
+			<hr>
+
+			<!-- Problem 6 -->
+			<h3>Problem 6</h3>
+			<blockquote>請將答案寫在 <code>/answer/up-down-left-right.js</code> 內</blockquote>
+			<h4>設計一個 javascript 程式來偵測「上下左右」按鍵事件，並在按下按鍵後 alert 出按的按鍵是什麼。</h4>
+		</div>
 
 		<script type="text/javascript">
 

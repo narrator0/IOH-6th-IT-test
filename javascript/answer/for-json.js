@@ -1,4 +1,7 @@
+/**
+ * @param { Object } json
+ */
 function json_run(json){
+	//start your code...
 
-    //提示：請把id="second-answer"用innerHTML取代
- }
+}

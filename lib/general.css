@@ -3,6 +3,11 @@ html, body {
 	font-family: Helvetica, sans-serif;
 }
 
+/* navbar */
+nav.navbar-inverse {
+	border-radius: 0;
+}
+
 /* content */
 .content {
 	margin-bottom: 20px; 
@@ -12,6 +17,38 @@ html, body {
 .description p {
 	font-size: 22px;
 	margin-top: 10px;
+}
+
+/* code editor */
+input.toggle {
+	display: none;
+}
+
+.window label {
+	font-size: 22px;
+	transition: 0.5s all ease-in;
+}
+
+input.toggle:checked ~ label {
+	margin-bottom: 20px;
+}
+
+input.toggle ~ div.editor {
+	transition: 1s all ease-in-out;
+	max-height: 0px;
+	overflow: hidden;
+	border: none;
+	border-radius: 3px;
+  font-size: 18px;
+}
+
+input.toggle:checked ~ div.editor {
+	border: #E3EDF3 1px solid;
+	max-height: 9999px;
+}
+
+.CodeMirror {
+	height: auto !important;
 }
 
 /* Html highlight */
@@ -43,4 +80,17 @@ pre .html-attr {
 
 pre .html-attr-value {
 	color: #AAD88F;
+}
+
+/* js test result icon */
+p > span {
+	margin-left: 6px;
+}
+
+/* form container */
+.form-container {
+	width: 40%;
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 3px;
 }
